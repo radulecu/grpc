@@ -20,7 +20,6 @@ import io.grpc.Channel;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
-import ro.rasel.helloworld.HelloWorldServer;
 import ro.rasel.helloworld.grpc.GreeterGrpc;
 import ro.rasel.helloworld.grpc.HelloReply;
 import ro.rasel.helloworld.grpc.HelloRequest;
@@ -76,7 +75,7 @@ public class HelloWorldClient {
         if (args.length > 0) {
             if ("--help".equals(args[0])) {
                 System.err.println("Usage: [name [target]]");
-                System.err.println("");
+                System.err.println();
                 System.err.println("  name    The name you wish to be greeted by. Defaults to " + user);
                 System.err.println("  target  The server to connect to. Defaults to " + target);
                 System.exit(1);

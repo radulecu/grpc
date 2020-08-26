@@ -11,6 +11,7 @@
 
     <modules>
         <module>helloworld</module>
+        <module>helloworldstreaming</module>
 <!--        <module>routeguide</module>-->
     </modules>
 </project>
